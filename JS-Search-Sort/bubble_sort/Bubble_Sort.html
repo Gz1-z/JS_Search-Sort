@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble Sort Interactive Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Bubble Sort Explorer</h1>
+        <div class="setup-panel">
+            <input type="text" id="customInput" placeholder="Contoh: 50, 10, 40, 25">
+            <button onclick="updateData()">Set Angka</button>
+            <button onclick="randomizeData()">Acak</button>
+        </div>
+    </div>
+
+    <div class="main-layout">
+        <div class="visual-section">
+            <div id="visualizer" class="container"></div>
+            
+            <div class="control-panel">
+                <div class="speed-control">
+                    <label>Kecepatan:</label>
+                    <input type="range" id="speed" min="100" max="1500" value="800">
+                </div>
+                <div class="button-group">
+                    <button id="btnStart" class="btn-primary" onclick="startSorting()">Mulai Otomatis</button>
+                    <button id="btnStep" class="btn-step" onclick="nextStep()">Langkah Per Langkah</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="log-section">
+            <h3>Log Aktivitas Bubble</h3>
+            <div id="logPanel" class="log-panel"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

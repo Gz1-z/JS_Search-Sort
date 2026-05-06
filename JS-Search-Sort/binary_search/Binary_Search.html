@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualisasi Binary Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>⚡ Binary Search Simulator</h2>
+        <p>Data harus <strong>terurut</strong> agar algoritma ini bekerja.</p>
+        
+        <div class="input-section">
+            <input type="text" id="arrayInput" value="10, 20, 30, 40, 50, 60, 70, 80, 90, 100">
+            <input type="number" id="targetInput" value="80">
+            <button onclick="generateArray()">Set Data</button>
+        </div>
+
+        <div class="box-container" id="arrayVisual"></div>
+        
+        <div class="controls">
+            <button id="btnMulai" onclick="mulaiBinarySearch()" disabled>Mulai Binary Search</button>
+            <button onclick="location.reload()">Reset</button>
+        </div>
+        
+        <div id="statusMsg">Siapkan data dan klik 'Mulai'.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

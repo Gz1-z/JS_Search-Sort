@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Sort Custom Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Quick Sort: Custom Input & Step-by-Step</h2>
+    
+    <div class="input-section">
+        <input type="text" id="user-input" placeholder="Contoh: 40, 10, 50, 30, 20">
+        <button onclick="setCustomArray()">Set Angka</button>
+    </div>
+
+    <div id="array-container"></div>
+    
+    <div class="controls">
+        <button id="start-btn" onclick="startSort()">Mulai Quick Sort</button>
+        <button onclick="resetArray()">Acak Ulang</button>
+    </div>
+
+    <div id="log-container">
+        <h3>Langkah-langkah:</h3>
+        <ul id="step-log"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

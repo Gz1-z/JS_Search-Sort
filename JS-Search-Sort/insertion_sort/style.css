@@ -1,0 +1,37 @@
+body { font-family: 'Inter', sans-serif; background: #f8f9fa; margin: 0; padding: 20px; color: #333; }
+.header { text-align: center; margin-bottom: 30px; }
+.setup-panel { margin-top: 15px; }
+
+input[type="text"] { padding: 10px; border: 1px solid #ddd; border-radius: 5px; width: 200px; }
+
+.main-layout { display: flex; gap: 25px; max-width: 1100px; margin: 0 auto; height: 550px; }
+
+.visual-section { flex: 2; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+
+.container { display: flex; 
+    align-items: flex-end; 
+    height: 250px; 
+    gap: 12px; 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 10px; }
+
+.bar { flex: 1; background: #3498db; position: relative; border-radius: 6px 6px 0 0; transition: all 0.3s ease; color: white; display: flex; justify-content: center; align-items: flex-end; padding-bottom: 10px; font-weight: bold; }
+
+/* Status Warna */
+.key { background: #f39c12 !important; transform: translateY(-25px); box-shadow: 0 10px 20px rgba(243, 156, 18, 0.3); }
+.comparing { background: #e74c3c !important; }
+.done { background: #2ecc71 !important; }
+
+.control-panel { margin-top: auto; padding-top: 20px; border-top: 1px solid #eee; }
+.speed-control { margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+button { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.2s; }
+.btn-primary { background: #2ecc71; color: white; }
+.btn-step { background: #34495e; color: white; }
+button:hover { opacity: 0.9; transform: translateY(-1px); }
+button:disabled { background: #ccc; cursor: not-allowed; }
+
+.log-section { flex: 1; background: #2c3e50; border-radius: 15px; padding: 20px; color: #fff; display: flex; flex-direction: column; }
+.log-panel { flex: 1; overflow-y: auto; font-family: 'Courier New', monospace; font-size: 13px; }
+.log-item { padding: 5px 0; border-bottom: 1px solid #3d566e; opacity: 0.9; }
+.log-highlight { color: #f1c40f; font-weight: bold; }

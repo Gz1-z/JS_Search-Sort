@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Insertion Sort Pro Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Insertion Sort Explorer</h1>
+        <div class="setup-panel">
+            <input type="text" id="customInput" placeholder="Contoh: 15, 40, 5, 20">
+            <button onclick="updateData()">Set Angka</button>
+            <button onclick="randomizeData()">Acak</button>
+        </div>
+    </div>
+
+    <div class="main-layout">
+        <div class="visual-section">
+            <div id="visualizer" class="container"></div>
+            
+            <div class="control-panel">
+                <div class="speed-control">
+                    <label>Kecepatan:</label>
+                    <input type="range" id="speed" min="100" max="1500" value="700">
+                </div>
+                <div class="button-group">
+                    <button id="btnStart" class="btn-primary" onclick="startSorting()">Mulai Otomatis</button>
+                    <button id="btnStep" class="btn-step" onclick="nextStep()">Langkah Per Langkah</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="log-section">
+            <h3>Log Aktivitas</h3>
+            <div id="logPanel" class="log-panel"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
